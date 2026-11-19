@@ -5,8 +5,8 @@ const app = express();
 app.use(bodyParser.json());
 
 const VERIFY_TOKEN = "mahal123";
-const WHATSAPP_TOKEN = "PASTE_YOUR_TOKEN_HERE";
-const PHONE_NUMBER_ID = "PASTE_YOUR_PHONE_ID_HERE";
+const WHATSAPP_TOKEN = "EAAU3NT26GAMBTFAx9cyp4fuPetIvhD3dSzEJe3AUz8DKduuKewhGD4D4gB74I9lBw5SkkrM2SOK1GXGM4FM86K7oG2nwEJ5RJqPZBArGmjYYKRWidcyegZActjOZBPSOYY3eZB0M3yIZBatheENhXDwSG0kS3rU712yaQCnDTj1aPHOmpy4MV4XRxXfYPhosA5cmw6c5ZBFHEjG0ZCk7coDC8C7ESPaes09qHbZBRhFM1f9nDJzccznvI0lIbSvLb1xSm4Qhr1CF1clpJMZCWlBVfljjzorWBaVrvkDSKwZBhm";
+const PHONE_NUMBER_ID = "1344201218787249";
 
 app.get('/webhook', (req, res) => {
   const mode = req.query['hub.mode'];
