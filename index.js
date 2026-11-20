@@ -33,7 +33,7 @@ app.post('/webhook', async (req, res) => {
       if (text.includes('hi') || text.includes('hello') || text.includes('salam')) {
         reply = "Assalamu Alaikum! Mahal WhatsApp Bot ready aanu. Engane sahayikkam?";
       }
-      await axios.post(`https://graph.facebook.com/v18.0/${PHONE_NUMBER_ID}/messages`, {
+     + await axios.post(`https://graph.facebook.com/v18.0/${PHONE_NUMBER_ID}/messages`, {
         messaging_product: "whatsapp",
         to: from,
         text: { body: reply }
